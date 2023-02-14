@@ -1,10 +1,18 @@
+-- I'm a restaurant owner
+-- create 5 Tables
+-- 1x Fact, 4x Dimensions
+-- search google -> how to add a foreign key
+-- write SQL 3-5 queries to analyze data
+-- 1x subquery/ with
+
+
 create table Customer(
   customer_id int PRIMARY key,
   customer_type Text
   );
   
 insert into Customer VALUES
-	  (1,'single'),
+    (1,'single'),
     (2,'couple'),
     (3,'family'),
     (4,'group');
@@ -15,7 +23,7 @@ create table Payment (
   );
 
 insert into Payment VALUES
-	  (1,'cash'),
+    (1,'cash'),
     (2,'credit card'),
     (3,'crypto'),
     (4,'member card');
@@ -27,7 +35,7 @@ CREATE table Menu (
   );
 
 insert into Menu values
-	  (1,'Hamburger','USA'),
+    (1,'Hamburger','USA'),
     (2,'Tom-yam-koong','Thailand'),
     (3,'Sushi','Japan'),
     (4,'Pizza','Italy'),
@@ -38,8 +46,8 @@ CREATE table Drink(
   Drink text
   );
 
-insert into Drink values
-	(1,'drinking water'),
+insert into Drink values     
+    (1,'drinking water'),
     (2,'coke'),
     (3,'pepsi'),
     (4,'ice tea'),
@@ -62,7 +70,7 @@ create table orders(
 );
 
 insert into orders values
-	(1,'2022-04-13',415,1,1,2,1),
+    (1,'2022-04-13',415,1,1,2,1),
     (2,'2022-04-13',500.25,2,2,2,3),
     (3,'2022-04-14',870.50,2,3,3,4),
     (4,'2022-04-14',250,4,1,4,2),
